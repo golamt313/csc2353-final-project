@@ -15,6 +15,13 @@ public class HoldemHand implements Comparable<HoldemHand>{
         sharedCards = new ArrayList<>();
     }
 
+    public HoldemHand(Card card1, Card card2, ArrayList<Card> river) {
+        this.card1 = card1;
+        this.card2 = card2;
+
+        sharedCards = river;
+    }
+
     public Card getCard1() {
         return card1;
     }

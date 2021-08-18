@@ -22,5 +22,14 @@ public class Deck {
     public Card deal(){
         return cards.remove(cards.size()-1);
     }
+
+    public void removeCard(Card playerCard1, Card playerCard2) {
+        cards.remove(playerCard1);
+        cards.remove(playerCard2);
+    }
+
+    public void removeRiverCard(Card riverCard) {
+        cards.remove(riverCard);
+    }
     
 }

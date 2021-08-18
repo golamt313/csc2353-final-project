@@ -3,12 +3,15 @@ package project2.holdem;
 // sourced from Eric's github, the url won't paste and I don't want to hand type it
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.HashSet;
+import java.util.Set;
 
 public class PokerHand implements Comparable<PokerHand> {
 
     private ArrayList<Card> cards;
 
     private int[] countOfFaces;
+
 
     public PokerHand(ArrayList<Card> cards) {
         this.cards = new ArrayList<Card>(5);
